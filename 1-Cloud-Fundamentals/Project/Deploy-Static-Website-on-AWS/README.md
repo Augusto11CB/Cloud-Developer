@@ -27,7 +27,7 @@ index.html - The Index document for the website.
 ![](resources/s3-bucket-cloud-dev-c1-project-support-static-website-hosting-2.png)
 
 ### S3 Bucket Permissions
-![](resources/s3-bucket-cloud-dev-c1-project-support-static-website-hosting-permissions.png)
+![](resources/s3-bucket-cloud-dev-c1-project-support-static-website-hosting-permission.png)
 
 ### Cloudfront 
 ![](resources/cloudfront-cloud-dev-c1-project-deploy.png)
