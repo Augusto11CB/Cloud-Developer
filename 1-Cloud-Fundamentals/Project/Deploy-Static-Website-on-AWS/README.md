@@ -12,7 +12,10 @@ index.html - The Index document for the website.
 
 ## Cloud Dev Project Configs - C1 Project
 
-**Website URL**: http://cloud-dev-c1-project.s3-sa-east-1.amazonaws.com/index.html
+### Website URL
+**Domain Name**: http://dz4t8gzrrxi1f.cloudfront.net/index.html
+
+**Origin**: http://cloud-dev-c1-project.s3-sa-east-1.amazonaws.com/index.html
 
 **Github Repo URL**: https://github.com/AugustoCalado/Cloud-Developer/tree/main/1-Cloud-Fundamentals/Project/Deploy-Static-Website-on-AWS
 
