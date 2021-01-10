@@ -5,7 +5,7 @@
 - [Storing Data in the Cloud](./Storing-Data-in-the-Cloud.md)
 - [Building and Deploying](./Building-and-Deploying.md)
 - [User Authentication and Security](./User-Authentication-and-Security.md)
-  - [Environment Variables](./User-Authentication-and-Security.md#XYZ)
+  - [Environment Variables](./User-Authentication-and-Security.md#2-environment-variables---linuxmac-users)
 
 ## Nice Terms/Info to Know
 Loosely coupled systems are recommended over monolithic systems, as they reduce technical debt.
