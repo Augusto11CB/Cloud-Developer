@@ -26,7 +26,21 @@ const serverlessConfiguration: AWS = {
     },
     lambdaHashingVersion: '20201221',
   },
-  functions: { hello }
+  
+  functions: {
+    GetGroups: {
+      handler: 'src/lambda/http/getGroups.handler',
+      events: [
+        {
+          http: {
+            method: 'post',
+            path: 'hello',
+            cors: true
+          }
+        }
+      ]
+    }
+  }
 }
 
 module.exports = serverlessConfiguration;
