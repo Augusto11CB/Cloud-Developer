@@ -1,24 +1,25 @@
-import { SNSHandler, SNSEvent, S3Event, S3Handler } from 'aws-lambda'
+// import { SNSHandler, SNSEvent, S3Event, S3Handler } from 'aws-lambda'
+import { S3Event, S3Handler } from 'aws-lambda'
 import 'source-map-support/register'
-import * as AWS from 'aws-sdk'
-import * as AWSXRay from 'aws-xray-sdk'
-const XAWS = AWSXRay.captureAWS(AWS)
+// import * as AWS from 'aws-sdk'
+// import * as AWSXRay from 'aws-xray-sdk'
+// const XAWS = AWSXRay.captureAWS(AWS)
 
-const docClient = new XAWS.DynamoDB.DocumentClient()
+// const docClient = new XAWS.DynamoDB.DocumentClient()
 
-const connectionsTable = process.env.CONNECTIONS_TABLE
-const stage = process.env.STAGE
-const apiId = process.env.API_ID
+// const connectionsTable = process.env.CONNECTIONS_TABLE
+// const stage = process.env.STAGE
+// const apiId = process.env.API_ID
 
-const connectionParams = {
-  apiVersion: "2018-11-29",
-  endpoint: `${apiId}.execute-api.us-east-1.amazonaws.com/${stage}`
-}
+// const connectionParams = {
+//   apiVersion: "2018-11-29",
+//   endpoint: `${apiId}.execute-api.us-east-1.amazonaws.com/${stage}`
+// }
 
-const apiGateway = new AWS.ApiGatewayManagementApi(connectionParams)
+// const apiGateway = new AWS.ApiGatewayManagementApi(connectionParams)
 
 export const handler: S3Handler = async (event: S3Event) => {
-  for(const record of event.Records){
+  for (const record of event.Records) {
     const key = record.s3.object.key;
     console.log('Processing S3 item with key: ', key)
   }
