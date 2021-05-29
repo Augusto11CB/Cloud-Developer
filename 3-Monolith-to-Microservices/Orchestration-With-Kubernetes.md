@@ -109,6 +109,13 @@ using the Kubernetes command-line tool,  `kubectl`, to interact with a cluster.
 
 ### Interacting With Your Cluster
 1.  [Install  `kubectl`](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
+	```
+	sudo apt-get update && sudo apt-get install -y apt-transport-https
+	curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+	echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+	sudo apt-get update
+	sudo apt-get install -y kubectl
+	```
 2.  [Set up  `aws-iam-authenticator`](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html)
 3.  [Set up  `kubeconfig`](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html)
 
